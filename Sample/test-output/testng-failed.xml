@@ -5,7 +5,8 @@
     <classes>
       <class name="com.datadrivenframework.test.ddf1">
         <methods>
-          <include name="TestVzoneLogin" invocation-numbers="0 1"/>
+          <include name="TearDown"/>
+          <include name="TestVzoneLogin"/>
         </methods>
       </class> <!-- com.datadrivenframework.test.ddf1 -->
     </classes>
