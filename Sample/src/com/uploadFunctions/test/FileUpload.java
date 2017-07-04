@@ -32,7 +32,7 @@ public class FileUpload {
 		//Specify the file location with extension
 		StringSelection sel = new StringSelection("C:\\Users\\alagappan.n\\Documents\\Dailypad.txt");
 		//Copy to Clip board
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null  );
 		System.out.println("Selection" +sel);
 		//Scroll the page
 		JavascriptExecutor js = (JavascriptExecutor)driver;
