@@ -13,7 +13,7 @@ public class HandleMultipleWindows {
 	@Test
 	public void MultipleFileUpload() throws Throwable
 	{
-		//Setup the browser and open the test applicatiom
+		//Setup the browser and open the test application
 		System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver_win32_2.29/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(appurl);

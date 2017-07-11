@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.uploadFunctions.test.FileUpload">
+      <class name="com.HandleAlertWindow.test.SimpleAlertBox">
         <methods>
-          <include name="Fileupload"/>
+          <include name="DemoAlert"/>
         </methods>
-      </class> <!-- com.uploadFunctions.test.FileUpload -->
+      </class> <!-- com.HandleAlertWindow.test.SimpleAlertBox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
