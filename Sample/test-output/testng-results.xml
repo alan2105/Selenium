@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35559" started-at="2017-07-11T09:46:43Z" finished-at="2017-07-11T09:47:19Z">
+  <suite name="Default suite" duration-ms="83885" started-at="2017-07-14T10:10:46Z" finished-at="2017-07-14T10:12:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35559" started-at="2017-07-11T09:46:43Z" finished-at="2017-07-11T09:47:19Z">
-      <class name="com.HandleAlertWindow.test.SimpleAlertBox">
-        <test-method status="PASS" signature="DemoAlert()[pri:0, instance:com.HandleAlertWindow.test.SimpleAlertBox@396a51ab]" name="DemoAlert" duration-ms="35525" started-at="2017-07-11T15:16:43Z" finished-at="2017-07-11T15:17:19Z">
+    <test name="Default test" duration-ms="83885" started-at="2017-07-14T10:10:46Z" finished-at="2017-07-14T10:12:10Z">
+      <class name="com.HandleAlertWindow.test.HandlePopupWindowOrBootstrap">
+        <test-method status="PASS" signature="DemoPopup()[pri:0, instance:com.HandleAlertWindow.test.HandlePopupWindowOrBootstrap@396a51ab]" name="DemoPopup" duration-ms="83853" started-at="2017-07-14T15:40:46Z" finished-at="2017-07-14T15:42:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DemoAlert -->
-      </class> <!-- com.HandleAlertWindow.test.SimpleAlertBox -->
+        </test-method> <!-- DemoPopup -->
+      </class> <!-- com.HandleAlertWindow.test.HandlePopupWindowOrBootstrap -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

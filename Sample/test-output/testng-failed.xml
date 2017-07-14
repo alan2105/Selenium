@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.HandleAlertWindow.test.SimpleAlertBox">
+      <class name="com.HandleAlertWindow.test.HandlePopupWindowOrBootstrap">
         <methods>
-          <include name="DemoAlert"/>
+          <include name="DemoPopup"/>
         </methods>
-      </class> <!-- com.HandleAlertWindow.test.SimpleAlertBox -->
+      </class> <!-- com.HandleAlertWindow.test.HandlePopupWindowOrBootstrap -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
