@@ -30,10 +30,12 @@ public class UsingAlertMethod {
 		driver.findElement(By.id("CancelTab")).click();
 		Thread.sleep(5000);
 		//Switch to alert window and capture the text of alert window
+		
 		//Click on Cancel button in alert box
 		AlertBoxMethod.Alert_Dismiss(driver);
 		Thread.sleep(5000);
-		driver.quit();	
+		driver.quit();
+		
 	}
 }
 

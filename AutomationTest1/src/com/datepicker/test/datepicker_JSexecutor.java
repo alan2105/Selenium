@@ -14,7 +14,7 @@ public class datepicker_JSexecutor {
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver;
-		//WebElement ele;
+		WebElement ele;
 	//To launch the browser
 //		System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\Third party drivers\\geckodriver-v0.15.0-win64\\geckodriver.exe");
 //		driver = new FirefoxDriver();
