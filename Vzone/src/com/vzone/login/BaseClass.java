@@ -21,7 +21,7 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+ 
 	}	
 
 	public void FirefoxSetUp()

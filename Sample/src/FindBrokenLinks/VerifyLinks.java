@@ -32,10 +32,12 @@ public class VerifyLinks {
 			
 			VerifyActiveLink(url);
 			
-			driver.quit();
+			
 		}
-
+		driver.quit();
 	}
+	
+	
 	
 	public static void 	VerifyActiveLink(String linkurl)
 	{
