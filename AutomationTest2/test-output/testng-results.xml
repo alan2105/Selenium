@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6684" started-at="2017-08-22T11:37:10Z" finished-at="2017-08-22T11:37:16Z">
+  <suite name="Default suite" duration-ms="15067" started-at="2017-08-28T11:04:26Z" finished-at="2017-08-28T11:04:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6684" started-at="2017-08-22T11:37:10Z" finished-at="2017-08-22T11:37:16Z">
-      <class name="com.vzone.TestCases.VerifyVzoneLogin">
-        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:com.vzone.TestCases.VerifyVzoneLogin@66d2e7d9]" name="VerifyLogin" duration-ms="6656" started-at="2017-08-22T17:07:10Z" finished-at="2017-08-22T17:07:16Z">
+    <test name="Default test" duration-ms="15067" started-at="2017-08-28T11:04:26Z" finished-at="2017-08-28T11:04:41Z">
+      <class name="com.vzone.TestCases.VerifyLogin">
+        <test-method status="PASS" signature="checkVaildUser()[pri:0, instance:com.vzone.TestCases.VerifyLogin@7921b0a2]" name="checkVaildUser" duration-ms="15036" started-at="2017-08-28T16:34:26Z" finished-at="2017-08-28T16:34:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-      </class> <!-- com.vzone.TestCases.VerifyVzoneLogin -->
+        </test-method> <!-- checkVaildUser -->
+      </class> <!-- com.vzone.TestCases.VerifyLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
