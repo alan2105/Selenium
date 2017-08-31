@@ -14,7 +14,7 @@ public class VerifyLinks {
 
 	public static void main(String[] args) {
 		WebDriver driver;
-		String appurl = "https://www.mockaroo.com/";
+		String appurl = "http://test.vzone.vmokshagroup.com/";
 		
 		System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver.exe");
 		driver  = new ChromeDriver();

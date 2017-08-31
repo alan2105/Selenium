@@ -35,7 +35,6 @@ public class UsingAlertMethod {
 		AlertBoxMethod.Alert_Dismiss(driver);
 		Thread.sleep(5000);
 		driver.quit();
-		
 	}
 }
 

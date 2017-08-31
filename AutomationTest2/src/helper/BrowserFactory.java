@@ -27,8 +27,8 @@ public class BrowserFactory {
 			System.setProperty("webdriver.ie.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/IEDriver/IEDriverServer_Win32_3.5.1/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
-		driver.get(appurl);
 		driver.manage().window().maximize();
+		driver.get(appurl);
 		return driver;
 	}
 }

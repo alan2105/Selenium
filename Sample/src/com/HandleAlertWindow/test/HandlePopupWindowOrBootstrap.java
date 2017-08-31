@@ -22,13 +22,13 @@ public class HandlePopupWindowOrBootstrap {
 		driver.manage().window().maximize();
 		driver.get(appurl);
 		
-		driver.findElement(By.id("get_sign_in")).click();;
+		driver.findElement(By.id("get_sign_in")).click();
 		Thread.sleep(3000);
 		driver.switchTo().frame("authiframe");
 		Thread.sleep(3000);
 		driver.findElement(By.id("authMobile")).sendKeys("9042190414");
 		Thread.sleep(3000);
-		driver.navigate().refresh();
+		driver.navigate().back();
 		driver.quit();
 		
 	}
