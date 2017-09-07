@@ -30,5 +30,6 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.get(appurl);
 		return driver;
+		
 	}
 }
