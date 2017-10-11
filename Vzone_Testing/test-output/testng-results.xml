@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11904" started-at="2017-05-03T09:51:17Z" finished-at="2017-05-03T09:51:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11904" started-at="2017-05-03T09:51:17Z" finished-at="2017-05-03T09:51:29Z">
+      <class name="LoginLogout.LoginToVzone">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="SetUp" is-config="true" duration-ms="6541" started-at="2017-05-03T15:21:17Z" finished-at="2017-05-03T15:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LoginToTestApplication()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="LoginToTestApplication" duration-ms="4071" started-at="2017-05-03T15:21:23Z" description="Login Functionality" finished-at="2017-05-03T15:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToTestApplication -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1259" started-at="2017-05-03T15:21:28Z" finished-at="2017-05-03T15:21:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginLogout.LoginToVzone -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

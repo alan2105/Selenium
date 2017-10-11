@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[===== Chrome Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[===== Firefox Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser session end=====]]>
+    </line>
+    <line>
+      <![CDATA[===== Chrome Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[===== Firefox Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser session end=====]]>
+    </line>
+    <line>
+      <![CDATA[===== Chrome Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[===== IE Browser session started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser session end=====]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60169" started-at="2017-05-29T06:39:26Z" finished-at="2017-05-29T06:40:26Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="22153" started-at="2017-05-29T06:39:26Z" finished-at="2017-05-29T06:39:48Z">
+      <class name="com.vzone.crossbrowser.CrossBrowserTest">
+        <test-method status="PASS" signature="ChromeSetUp()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@5d5eef3d]" name="ChromeSetUp" is-config="true" duration-ms="4661" started-at="2017-05-29T12:09:26Z" finished-at="2017-05-29T12:09:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===== Chrome Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChromeSetUp -->
+        <test-method status="PASS" signature="CBTest(java.lang.String)[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@5d5eef3d]" name="CBTest" duration-ms="16581" started-at="2017-05-29T12:09:31Z" finished-at="2017-05-29T12:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[===== Firefox Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CBTest -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@5d5eef3d]" name="CloseBrowser" is-config="true" duration-ms="878" started-at="2017-05-29T12:09:47Z" finished-at="2017-05-29T12:09:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser session end=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.vzone.crossbrowser.CrossBrowserTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="19457" started-at="2017-05-29T06:39:48Z" finished-at="2017-05-29T06:40:08Z">
+      <class name="com.vzone.crossbrowser.CrossBrowserTest">
+        <test-method status="PASS" signature="ChromeSetUp()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@1593948d]" name="ChromeSetUp" is-config="true" duration-ms="3793" started-at="2017-05-29T12:09:48Z" finished-at="2017-05-29T12:09:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===== Chrome Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChromeSetUp -->
+        <test-method status="PASS" signature="CBTest(java.lang.String)[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@1593948d]" name="CBTest" duration-ms="14911" started-at="2017-05-29T12:09:52Z" finished-at="2017-05-29T12:10:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[===== Firefox Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CBTest -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@1593948d]" name="CloseBrowser" is-config="true" duration-ms="750" started-at="2017-05-29T12:10:07Z" finished-at="2017-05-29T12:10:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser session end=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.vzone.crossbrowser.CrossBrowserTest -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="18520" started-at="2017-05-29T06:40:08Z" finished-at="2017-05-29T06:40:26Z">
+      <class name="com.vzone.crossbrowser.CrossBrowserTest">
+        <test-method status="PASS" signature="ChromeSetUp()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@724af044]" name="ChromeSetUp" is-config="true" duration-ms="3711" started-at="2017-05-29T12:10:08Z" finished-at="2017-05-29T12:10:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===== Chrome Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChromeSetUp -->
+        <test-method status="PASS" signature="CBTest(java.lang.String)[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@724af044]" name="CBTest" duration-ms="13906" started-at="2017-05-29T12:10:11Z" finished-at="2017-05-29T12:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[===== IE Browser session started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CBTest -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vzone.crossbrowser.CrossBrowserTest@724af044]" name="CloseBrowser" is-config="true" duration-ms="900" started-at="2017-05-29T12:10:25Z" finished-at="2017-05-29T12:10:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser session end=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.vzone.crossbrowser.CrossBrowserTest -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
