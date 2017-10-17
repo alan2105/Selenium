@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22842" started-at="2017-10-17T06:39:02Z" finished-at="2017-10-17T06:39:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22842" started-at="2017-10-17T06:39:02Z" finished-at="2017-10-17T06:39:25Z">
+      <class name="basic_scripts.IsElementPresent">
+        <test-method status="PASS" signature="BrowserSetup()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="BrowserSetup" is-config="true" duration-ms="4047" started-at="2017-10-17T12:09:02Z" finished-at="2017-10-17T12:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method status="PASS" signature="verifyErrormessage2()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="verifyErrormessage2" duration-ms="17588" started-at="2017-10-17T12:09:06Z" finished-at="2017-10-17T12:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrormessage2 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="TearDown" is-config="true" duration-ms="1187" started-at="2017-10-17T12:09:24Z" finished-at="2017-10-17T12:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- basic_scripts.IsElementPresent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
