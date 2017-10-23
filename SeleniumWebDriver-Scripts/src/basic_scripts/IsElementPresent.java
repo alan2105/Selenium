@@ -1,5 +1,7 @@
 package basic_scripts;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,7 +30,7 @@ public class IsElementPresent {
 		driver.get(appurl);
 		driver.findElement(By.cssSelector("#user_login")).sendKeys("");
 		driver.findElement(By.cssSelector("#wp-submit")).click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		IsElementPresent obj = new IsElementPresent();
 		obj.isElementPresent(driver, Emsg);
 	}
