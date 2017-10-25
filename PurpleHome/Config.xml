@@ -5,23 +5,26 @@
 <parameter name = "Browser" value="Chrome"/>
 <classes>
 
-<class name="com.ph.CrossbrowserTest.VerifyLandingPage"></class>
+<class name="com.ph.libraries.BaseClass"></class>
 
 </classes>
 
 </test>
 <test name = "FirefoxTest">
+<parameter name = "Browser" value="Firefox"/>
 <classes>
 
-<class name="com.ph.CrossbrowserTest.VerifyLandingPage"></class>
+<class name="com.ph.libraries.BaseClass"></class>
 
 </classes>
 </test>
 <test name = "IETest">
+<parameter name = "Browser" value="IE"/>
 <classes>
 
-<class name="com.ph.CrossbrowserTest.VerifyLandingPage"></class>
+<class name="com.ph.libraries.BaseClass"></class>
 
 </classes>
 </test>
+
 </suite>

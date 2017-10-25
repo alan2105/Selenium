@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="47968" started-at="2017-10-25T07:26:46Z" finished-at="2017-10-25T07:27:34Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="20511" started-at="2017-10-25T07:26:46Z" finished-at="2017-10-25T07:27:07Z">
+      <class name="com.ph.libraries.BaseClass">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="BrowserSetUp" is-config="true" duration-ms="19565" started-at="2017-10-25T12:56:46Z" finished-at="2017-10-25T12:57:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="getTitle" duration-ms="301" started-at="2017-10-25T12:57:06Z" finished-at="2017-10-25T12:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="TearDown" is-config="true" duration-ms="609" started-at="2017-10-25T12:57:06Z" finished-at="2017-10-25T12:57:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.ph.libraries.BaseClass -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="16511" started-at="2017-10-25T07:27:07Z" finished-at="2017-10-25T07:27:23Z">
+      <class name="com.ph.libraries.BaseClass">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="BrowserSetUp" is-config="true" duration-ms="15127" started-at="2017-10-25T12:57:07Z" finished-at="2017-10-25T12:57:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="getTitle" duration-ms="242" started-at="2017-10-25T12:57:22Z" finished-at="2017-10-25T12:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="TearDown" is-config="true" duration-ms="1138" started-at="2017-10-25T12:57:22Z" finished-at="2017-10-25T12:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.ph.libraries.BaseClass -->
+    </test> <!-- FirefoxTest -->
+    <test name="IETest" duration-ms="10869" started-at="2017-10-25T07:27:23Z" finished-at="2017-10-25T07:27:34Z">
+      <class name="com.ph.libraries.BaseClass">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="BrowserSetUp" is-config="true" duration-ms="9583" started-at="2017-10-25T12:57:23Z" finished-at="2017-10-25T12:57:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="getTitle" duration-ms="753" started-at="2017-10-25T12:57:33Z" finished-at="2017-10-25T12:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="TearDown" is-config="true" duration-ms="530" started-at="2017-10-25T12:57:34Z" finished-at="2017-10-25T12:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.ph.libraries.BaseClass -->
+    </test> <!-- IETest -->
+  </suite> <!-- Suite -->
+</testng-results>
