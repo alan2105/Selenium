@@ -2,77 +2,77 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47968" started-at="2017-10-25T07:26:46Z" finished-at="2017-10-25T07:27:34Z">
+  <suite name="Suite" duration-ms="20446" started-at="2017-10-26T11:25:24Z" finished-at="2017-10-26T11:25:45Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="20511" started-at="2017-10-25T07:26:46Z" finished-at="2017-10-25T07:27:07Z">
-      <class name="com.ph.libraries.BaseClass">
-        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="BrowserSetUp" is-config="true" duration-ms="19565" started-at="2017-10-25T12:56:46Z" finished-at="2017-10-25T12:57:06Z">
+    <test name="ChromeTest" duration-ms="9370" started-at="2017-10-26T11:25:24Z" finished-at="2017-10-26T11:25:34Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="BrowserSetUp" is-config="true" duration-ms="8402" started-at="2017-10-26T16:55:24Z" finished-at="2017-10-26T16:55:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSetUp -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="getTitle" duration-ms="301" started-at="2017-10-25T12:57:06Z" finished-at="2017-10-25T12:57:06Z">
+        <test-method status="PASS" signature="TestCases()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="TestCases" duration-ms="35" started-at="2017-10-26T16:55:33Z" finished-at="2017-10-26T16:55:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@4439f31e]" name="TearDown" is-config="true" duration-ms="609" started-at="2017-10-25T12:57:06Z" finished-at="2017-10-25T12:57:07Z">
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="teardown" is-config="true" duration-ms="909" started-at="2017-10-26T16:55:33Z" finished-at="2017-10-26T16:55:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.ph.libraries.BaseClass -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
     </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="16511" started-at="2017-10-25T07:27:07Z" finished-at="2017-10-25T07:27:23Z">
-      <class name="com.ph.libraries.BaseClass">
-        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="BrowserSetUp" is-config="true" duration-ms="15127" started-at="2017-10-25T12:57:07Z" finished-at="2017-10-25T12:57:22Z">
+    <test name="FirefoxTest" duration-ms="7090" started-at="2017-10-26T11:25:34Z" finished-at="2017-10-26T11:25:41Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="BrowserSetUp" is-config="true" duration-ms="5956" started-at="2017-10-26T16:55:34Z" finished-at="2017-10-26T16:55:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSetUp -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="getTitle" duration-ms="242" started-at="2017-10-25T12:57:22Z" finished-at="2017-10-25T12:57:22Z">
+        <test-method status="PASS" signature="TestCases()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="TestCases" duration-ms="44" started-at="2017-10-26T16:55:40Z" finished-at="2017-10-26T16:55:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@675d3402]" name="TearDown" is-config="true" duration-ms="1138" started-at="2017-10-25T12:57:22Z" finished-at="2017-10-25T12:57:23Z">
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="teardown" is-config="true" duration-ms="1087" started-at="2017-10-26T16:55:40Z" finished-at="2017-10-26T16:55:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.ph.libraries.BaseClass -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
     </test> <!-- FirefoxTest -->
-    <test name="IETest" duration-ms="10869" started-at="2017-10-25T07:27:23Z" finished-at="2017-10-25T07:27:34Z">
-      <class name="com.ph.libraries.BaseClass">
-        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="BrowserSetUp" is-config="true" duration-ms="9583" started-at="2017-10-25T12:57:23Z" finished-at="2017-10-25T12:57:33Z">
+    <test name="IETest" duration-ms="3918" started-at="2017-10-26T11:25:41Z" finished-at="2017-10-26T11:25:45Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="BrowserSetUp" is-config="true" duration-ms="3189" started-at="2017-10-26T16:55:41Z" finished-at="2017-10-26T16:55:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[IE]]>
+                <![CDATA[ie]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSetUp -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="getTitle" duration-ms="753" started-at="2017-10-25T12:57:33Z" finished-at="2017-10-25T12:57:34Z">
+        <test-method status="PASS" signature="TestCases()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="TestCases" duration-ms="194" started-at="2017-10-26T16:55:44Z" finished-at="2017-10-26T16:55:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ph.libraries.BaseClass@457e2f02]" name="TearDown" is-config="true" duration-ms="530" started-at="2017-10-25T12:57:34Z" finished-at="2017-10-25T12:57:34Z">
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="teardown" is-config="true" duration-ms="533" started-at="2017-10-26T16:55:44Z" finished-at="2017-10-26T16:55:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.ph.libraries.BaseClass -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
     </test> <!-- IETest -->
   </suite> <!-- Suite -->
 </testng-results>

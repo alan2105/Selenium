@@ -1,19 +1,33 @@
 package com.ph.CrossbrowserTest;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-
+import com.ph.libraries.BaseMethods;
 
 public class VerifyLandingPage {
 	
-	static WebDriver driver;
-	static String title,url;
-	@Test
-	public static void getTitle() throws InterruptedException
+	private static WebDriver driver;
+	@Parameters("Browser")
+	@BeforeClass
+	public void BrowserSetUp(String browser)
 	{
-		driver.findElement(By.id("inputUsername")).sendKeys("alagappanmca21@gmail.com");
+		driver = BaseMethods.getDriverInstance(browser);
 	}
-
+	@Test
+	public void TestCases()
+	{
+		BaseMethods.getTitle();
+	}
+	
+	
+	@AfterClass
+	public void teardown()
+	{
+		driver.quit();
+	}
+	
 }

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ph.libraries.BaseClass">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
         <methods>
+          <include name="getTitle"/>
           <include name="BrowserSetUp"/>
-          <include name="TestCases"/>
-          <include name="TearDown"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.ph.libraries.BaseClass -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

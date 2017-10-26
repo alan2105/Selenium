@@ -2,26 +2,27 @@ package com.ph.libraries;
 
 import org.openqa.selenium.By;
 
-//import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+
 
 public class BaseClass {
 
-	static WebDriver driver;
-	static String appUrl = "http://test.vzone.vmokshagroup.com/";
+	WebDriver driver;
+	String appUrl = "http://test.vzone.vmokshagroup.com/";
 	@Parameters("Browser")
 	@BeforeClass
-	public static void BrowserSetUp(String browser) throws Exception
+	public  void BrowserSetUp(String browser) throws Exception
 	{
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
@@ -29,9 +30,9 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(appUrl);
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
-		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		}
 		else if(browser.equalsIgnoreCase("Firefox"))
 		{
@@ -39,8 +40,9 @@ public class BaseClass {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get(appUrl);
-		Thread.sleep(5000);
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		}
 		else if(browser.equalsIgnoreCase("IE"))
 		{
@@ -48,18 +50,13 @@ public class BaseClass {
 		driver = new InternetExplorerDriver();
 		driver.get(appUrl);	
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
 		}
 		
 	}
 	
-	
-	@Test
-	public static void getTitle() throws InterruptedException
-	{
-		driver.findElement(By.id("inputUsername")).sendKeys("alagappanmca21@gmail.com");
-	}
 	
 	@AfterClass
 
