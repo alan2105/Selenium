@@ -13,7 +13,7 @@ public class VerifyLandingPage {
 	private static WebDriver driver;
 	@Parameters("Browser")
 	@BeforeClass
-	public void BrowserSetUp(String browser)
+	public void BrowserSetUp(String browser) 
 	{
 		driver = BaseMethods.getDriverInstance(browser);
 	}

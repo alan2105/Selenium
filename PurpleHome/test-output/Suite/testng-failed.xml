@@ -6,7 +6,7 @@
     <classes>
       <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
         <methods>
-          <include name="getTitle"/>
+          <include name="TestCases"/>
           <include name="BrowserSetUp"/>
           <include name="teardown"/>
         </methods>
