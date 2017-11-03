@@ -2,6 +2,7 @@ package com.ph.libraries;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,11 +15,11 @@ public class BaseMethods {
 	public static WebDriver getDriverInstance (String browser) 
 	{
 		
-		String appurl = "http://purplehome.client.web.dev.s3-website-us-west-2.amazonaws.com/02.dec.2016/index.html";
+		String appurl = "http://purplehome.client.web.test.s3-website-us-west-2.amazonaws.com/";
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver_win32_2.33/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver_win32_2.33/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(appurl);
@@ -54,6 +55,13 @@ public class BaseMethods {
 		System.out.println("Current URL of the page "+url);
 		screenshot.CaptureScreen(driver, "Landingpage");
 	}
-	
+	public static void Login(String username, String password)
+	{
+		driver.findElement(By.xpath(".//*[@id='divNavbarMenuDataGrid']/div/ul/li/a")).click();
+		driver.findElement(By.id("inputName")).sendKeys(username);
+		driver.findElement(By.id("inputPassword")).sendKeys(password);
+		driver.findElement(By.xpath(".//*[@id='divLogSign']/form/div[3]/div[2]/button")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
 
 }

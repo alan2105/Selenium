@@ -17,10 +17,12 @@ public class VerifyLandingPage {
 	{
 		driver = BaseMethods.getDriverInstance(browser);
 	}
+	@Parameters({"Username","Password"})
 	@Test
-	public void TestCases()
+	public void TestCases(String username,String password)
 	{
 		BaseMethods.getTitle();
+		BaseMethods.Login(username, password);
 	}
 	
 	

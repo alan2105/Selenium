@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="FirefoxTest(failed)">
-    <parameter name="Browser" value="firefox"/>
+  <test name="ChromeTest(failed)">
+    <parameter name="Username" value="alagappanmca21@gmail.com"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="Password" value="alan@2191"/>
     <classes>
       <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
         <methods>
-          <include name="TestCases"/>
+          <include name="TestCases" invocation-numbers="0"/>
+          <include name="BrowserSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)">
+    <parameter name="Username" value="alagappanmca21@gmail.com"/>
+    <parameter name="Browser" value="firefox"/>
+    <parameter name="Password" value="alan@2191"/>
+    <classes>
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <methods>
+          <include name="TestCases" invocation-numbers="0"/>
           <include name="BrowserSetUp"/>
           <include name="teardown"/>
         </methods>
