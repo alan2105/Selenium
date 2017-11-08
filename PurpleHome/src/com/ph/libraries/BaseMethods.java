@@ -7,15 +7,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseMethods {
 	
 	static WebDriver driver;
+	static String CurrentUrl;
+	static String appurl = "http://purplehome.client.web.test.s3-website-us-west-2.amazonaws.com/";
 	
 	public static WebDriver getDriverInstance (String browser) 
 	{
 		
-		String appurl = "http://purplehome.client.web.test.s3-website-us-west-2.amazonaws.com/";
+		
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
@@ -51,17 +56,31 @@ public class BaseMethods {
 	{
 		String title = driver.getTitle();
 		System.out.println("Title of the page "+title);
-		String url = driver.getCurrentUrl();
-		System.out.println("Current URL of the page "+url);
+		CurrentUrl = driver.getCurrentUrl();
+		System.out.println("Current URL of the page "+CurrentUrl);
 		screenshot.CaptureScreen(driver, "Landingpage");
 	}
-	public static void Login(String username, String password)
+	public static void Login(String username, String password) throws InterruptedException 
 	{
+		
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver,30);
 		driver.findElement(By.xpath(".//*[@id='divNavbarMenuDataGrid']/div/ul/li/a")).click();
 		driver.findElement(By.id("inputName")).sendKeys(username);
 		driver.findElement(By.id("inputPassword")).sendKeys(password);
 		driver.findElement(By.xpath(".//*[@id='divLogSign']/form/div[3]/div[2]/button")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
+		wait.until(ExpectedConditions.urlContains(appurl+"dashboard"));
+		CurrentUrl = driver.getCurrentUrl();
+		screenshot.CaptureScreen(driver, "LoginPage");
+		}
 
+	public static void Logout()
+	{
+		
+		driver.findElement(By.xpath(".//*[@id='dropdownSettingsMenu']")).click();
+		driver.findElement(By.linkText("Logout")).click();
+		CurrentUrl = driver.getCurrentUrl();
+		System.out.println("Logged out successfully and the current URL is : " +CurrentUrl);
+	}
 }

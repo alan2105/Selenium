@@ -28,7 +28,7 @@ public class screenshot {
 			
 			System.out.print("Exception while taking screenshot "+e.getMessage());
 		}
-		
+
 			
 		}
 	}

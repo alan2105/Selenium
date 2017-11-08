@@ -1,5 +1,7 @@
 package com.ph.CrossbrowserTest;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +11,6 @@ import org.testng.annotations.Test;
 import com.ph.libraries.BaseMethods;
 
 public class VerifyLandingPage {
-	
 	private static WebDriver driver;
 	@Parameters("Browser")
 	@BeforeClass
@@ -19,10 +20,12 @@ public class VerifyLandingPage {
 	}
 	@Parameters({"Username","Password"})
 	@Test
-	public void TestCases(String username,String password)
+	public void TestCases(String username,String password) throws InterruptedException
 	{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		BaseMethods.getTitle();
 		BaseMethods.Login(username, password);
+		BaseMethods.Logout();
 	}
 	
 	
