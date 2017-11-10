@@ -60,7 +60,8 @@ public class Inputbox_button_radiobutton_checkbox {
 		//System.out.println("MonthPicker Clicked");
 		//Thread.sleep(3000);
 		
-	List<WebElement> datepicker = driver.findElements(By.xpath(".//html/body/div[11]/div[2]/table/tbody/tr/td/span"));		for(WebElement ele:datepicker)
+	List<WebElement> datepicker = driver.findElements(By.xpath(".//html/body/div[11]/div[2]/table/tbody/tr/td/span"));		
+	for(WebElement ele:datepicker)
 		{
 			String month = ele.getText();
 			if(month.equalsIgnoreCase("May"))
