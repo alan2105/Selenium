@@ -1,4 +1,4 @@
-package com.ph.CrossbrowserTest;
+package com.vzone.CrossbrowserTest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.ph.libraries.BaseMethods;
+import com.vzone.libraries.BaseMethods;
 
 public class VerifyLandingPage {
 	private static WebDriver driver;

@@ -1,4 +1,4 @@
-package com.ph.libraries;
+package com.vzone.libraries;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +15,7 @@ public class BaseMethods {
 	
 	static WebDriver driver;
 	static String CurrentUrl;
-	static String appurl = "http://purplehome.client.web.test.s3-website-us-west-2.amazonaws.com/";
+	static String appurl = "http://test.vzone.vmokshagroup.com/";
 	
 	public static WebDriver getDriverInstance (String browser) 
 	{
@@ -78,8 +78,8 @@ public class BaseMethods {
 	public static void Logout()
 	{
 		
-		driver.findElement(By.xpath(".//*[@id='dropdownSettingsMenu']")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		driver.findElement(By.xpath("//A[@id='alagappan.n@vmokshagroup.com']")).click();
+		driver.findElement(By.id("anchSignout")).click();
 		CurrentUrl = driver.getCurrentUrl();
 		System.out.println("Logged out successfully and the current URL is : " +CurrentUrl);
 	}
