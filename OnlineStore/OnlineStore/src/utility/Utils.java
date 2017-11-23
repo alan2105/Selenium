@@ -39,6 +39,7 @@ public class Utils {
 		try{
 			int posi = value.indexOf("@");
 			value = value.substring(0, posi);
+			
 			posi = value.lastIndexOf(".");	
 			value = value.substring(posi + 1);
 			return value;

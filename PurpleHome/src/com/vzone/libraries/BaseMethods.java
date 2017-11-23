@@ -20,8 +20,6 @@ public class BaseMethods {
 	public static WebDriver getDriverInstance (String browser) 
 	{
 		
-		
-		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 		System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver_win32_2.33/chromedriver.exe");
