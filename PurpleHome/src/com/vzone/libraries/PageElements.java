@@ -107,4 +107,28 @@ public class PageElements {
 		}
 		return ele;
 	}
+	public static WebElement User_DropDown()throws Exception
+	{
+		try
+		{
+		ele = driver.findElement(By.xpath(".//a[contains(@id,'.com')]"));
+		}
+		catch(Exception e)
+		{
+			System.out.println("User_DropDown button or its elemnet is not found in page");
+		}
+		return ele;
+	}
+	public static WebElement Logout_btn()throws Exception
+	{
+		try
+		{
+		ele = driver.findElement(By.xpath(".//a[@id='anchSignout']"));
+		}
+		catch(Exception e)
+		{
+			System.out.println("User_DropDown button or its elemnet is not found in page");
+		}
+		return ele;
+	}
 }
