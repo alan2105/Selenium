@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="LoginLogout.LoginToVzone">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
         <methods>
-          <include name="LoginToTestApplication"/>
-          <include name="SetUp"/>
+          <include name="getTitle"/>
+          <include name="BrowserSetUp"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- LoginLogout.LoginToVzone -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

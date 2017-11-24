@@ -1,25 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11904" started-at="2017-05-03T09:51:17Z" finished-at="2017-05-03T09:51:29Z">
+  <suite name="Suite" duration-ms="47876" started-at="2017-11-08T06:15:17Z" finished-at="2017-11-08T06:16:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11904" started-at="2017-05-03T09:51:17Z" finished-at="2017-05-03T09:51:29Z">
-      <class name="LoginLogout.LoginToVzone">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="SetUp" is-config="true" duration-ms="6541" started-at="2017-05-03T15:21:17Z" finished-at="2017-05-03T15:21:23Z">
+    <test name="ChromeTest" duration-ms="13940" started-at="2017-11-08T06:15:17Z" finished-at="2017-11-08T06:15:31Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="BrowserSetUp" is-config="true" duration-ms="7026" started-at="2017-11-08T11:45:17Z" finished-at="2017-11-08T11:45:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="LoginToTestApplication()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="LoginToTestApplication" duration-ms="4071" started-at="2017-05-03T15:21:23Z" description="Login Functionality" finished-at="2017-05-03T15:21:28Z">
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="TestCases(java.lang.String, java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="TestCases" duration-ms="5459" started-at="2017-11-08T11:45:24Z" finished-at="2017-11-08T11:45:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alagappann1991@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9042190414A]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginToTestApplication -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginLogout.LoginToVzone@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1259" started-at="2017-05-03T15:21:28Z" finished-at="2017-05-03T15:21:29Z">
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@7ac7a4e4]" name="teardown" is-config="true" duration-ms="1423" started-at="2017-11-08T11:45:29Z" finished-at="2017-11-08T11:45:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- LoginLogout.LoginToVzone -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="17616" started-at="2017-11-08T06:15:31Z" finished-at="2017-11-08T06:15:49Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="BrowserSetUp" is-config="true" duration-ms="11619" started-at="2017-11-08T11:45:31Z" finished-at="2017-11-08T11:45:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="TestCases(java.lang.String, java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="TestCases" duration-ms="4904" started-at="2017-11-08T11:45:43Z" finished-at="2017-11-08T11:45:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alagappann1991@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9042190414A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@1753acfe]" name="teardown" is-config="true" duration-ms="1088" started-at="2017-11-08T11:45:47Z" finished-at="2017-11-08T11:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
+    </test> <!-- FirefoxTest -->
+    <test name="IETest" duration-ms="16276" started-at="2017-11-08T06:15:49Z" finished-at="2017-11-08T06:16:05Z">
+      <class name="com.ph.CrossbrowserTest.VerifyLandingPage">
+        <test-method status="PASS" signature="BrowserSetUp(java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="BrowserSetUp" is-config="true" duration-ms="5481" started-at="2017-11-08T11:45:49Z" finished-at="2017-11-08T11:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUp -->
+        <test-method status="PASS" signature="TestCases(java.lang.String, java.lang.String)[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="TestCases" duration-ms="10251" started-at="2017-11-08T11:45:54Z" finished-at="2017-11-08T11:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alagappann1991@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9042190414A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCases -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ph.CrossbrowserTest.VerifyLandingPage@675d3402]" name="teardown" is-config="true" duration-ms="542" started-at="2017-11-08T11:46:04Z" finished-at="2017-11-08T11:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ph.CrossbrowserTest.VerifyLandingPage -->
+    </test> <!-- IETest -->
+  </suite> <!-- Suite -->
 </testng-results>
