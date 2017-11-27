@@ -1,4 +1,4 @@
-package com.vzone.CrossbrowserTest;
+package com.vzone.actions;
 
 
 import com.vzone.libraries.PageElements;
