@@ -34,7 +34,7 @@ public class datepicker_JSexecutor {
 	System.out.println("Page Title is "+driver.getTitle());
 	System.out.println("Page Current URL is "+driver.getCurrentUrl());
 	Thread.sleep(2000);
-	//Click on Datepicker field
+	//Click on Date picker field
     driver.findElement(By.id("datepicker1")).click();
 	Thread.sleep(2000);
 	JavascriptExecutor js = (JavascriptExecutor)driver;

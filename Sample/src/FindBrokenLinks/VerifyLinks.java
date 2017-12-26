@@ -1,25 +1,27 @@
 package FindBrokenLinks;
 
-import java.net.HttpURLConnection;
+import java.net.HttpURLConnection;	
 import java.net.URL;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class VerifyLinks {
+	
+	public static int VaildLinks,BrokenLinks;
 
 	public static void main(String[] args) {
 		WebDriver driver;
-		String appurl = "http://test.vzone.vmokshagroup.com/";
+		String appurl = "http://www.google.co.in/";
 		
-		System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver.exe");
-		driver  = new ChromeDriver();
-		//System.setProperty("webdriver.gecko.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/GeckoDriver/geckodriver-v0.16.0-win64/geckodriver.exe");
-		//driver  = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/ChromeDriver/chromedriver.exe");
+		//driver  = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/GeckoDriver/geckodriver-v0.16.0-win64/geckodriver.exe");
+		driver  = new FirefoxDriver();
 		driver.get(appurl);
 		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
@@ -34,12 +36,15 @@ public class VerifyLinks {
 			
 			
 		}
-		driver.quit();
+		System.out.println("Total Broken Links are:"+BrokenLinks);
+		System.out.println("Total Broken Links are:"+VaildLinks);
+		//driver.quit();
+		
 	}
 	
 	
 	
-	public static void 	VerifyActiveLink(String linkurl)
+	public static void 	VerifyActiveLink(String linkurl)	
 	{
 		try
 		{
@@ -50,10 +55,12 @@ public class VerifyLinks {
 		
 		if(HttpUrlConnect.getResponseCode()== 200)
 		{
+			++VaildLinks;
 			System.out.println(linkurl+" - "+HttpUrlConnect.getResponseMessage());
 		}
 		if(HttpUrlConnect.getResponseCode()== 404)
 		{
+			++BrokenLinks;
 		System.out.println(linkurl+" - "+HttpUrlConnect.getResponseMessage()+" - "+HttpUrlConnect.getResponseMessage());
 		}
 		}
