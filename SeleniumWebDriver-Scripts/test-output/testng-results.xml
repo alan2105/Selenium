@@ -2,24 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13581" started-at="2017-10-19T04:32:22Z" finished-at="2017-10-19T04:32:36Z">
+  <suite name="Default suite" duration-ms="14691" started-at="2018-01-02T11:17:12Z" finished-at="2018-01-02T11:17:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13581" started-at="2017-10-19T04:32:22Z" finished-at="2017-10-19T04:32:36Z">
-      <class name="basic_scripts.IsElementPresent">
-        <test-method status="PASS" signature="BrowserSetup()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="BrowserSetup" is-config="true" duration-ms="4071" started-at="2017-10-19T10:02:22Z" finished-at="2017-10-19T10:02:26Z">
+    <test name="Default test" duration-ms="14691" started-at="2018-01-02T11:17:12Z" finished-at="2018-01-02T11:17:27Z">
+      <class name="Extent_Report.TestReport">
+        <test-method status="PASS" signature="VerifyUrl()[pri:0, instance:Extent_Report.TestReport@15d0c81b]" name="VerifyUrl" duration-ms="13992" started-at="2018-01-02T16:47:12Z" finished-at="2018-01-02T16:47:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserSetup -->
-        <test-method status="PASS" signature="verifyErrormessage()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="verifyErrormessage" duration-ms="8658" started-at="2017-10-19T10:02:26Z" finished-at="2017-10-19T10:02:35Z">
+        </test-method> <!-- VerifyUrl -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Extent_Report.TestReport@15d0c81b]" name="tearDown" is-config="true" duration-ms="675" started-at="2018-01-02T16:47:26Z" finished-at="2018-01-02T16:47:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUrl status=SUCCESS method=TestReport.VerifyUrl()[pri:0, instance:Extent_Report.TestReport@15d0c81b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrormessage -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:basic_scripts.IsElementPresent@6d8a00e3]" name="TearDown" is-config="true" duration-ms="829" started-at="2017-10-19T10:02:35Z" finished-at="2017-10-19T10:02:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- basic_scripts.IsElementPresent -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Extent_Report.TestReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
