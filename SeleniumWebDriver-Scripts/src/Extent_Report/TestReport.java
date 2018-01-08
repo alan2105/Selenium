@@ -30,7 +30,7 @@ public class TestReport {
 		driver.findElement(By.id("inputUsername")).sendKeys("alagappan.n@vmokshagroup.com");
 		driver.findElement(By.id("inputPassword")).sendKeys("Power@1234");
 		driver.findElement(By.id("btnSignIn")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		String CurrentUrl = driver.getCurrentUrl();
 		Assert.assertTrue(CurrentUrl.contains("Inbox"));
 	}
