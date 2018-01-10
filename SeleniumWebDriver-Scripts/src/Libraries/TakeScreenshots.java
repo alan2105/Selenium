@@ -13,7 +13,10 @@ public class TakeScreenshots
 {
 	public static String capturescreenshot(WebDriver driver,String Screenshotname)
 	{
+		
+		
 		String filePath = "./Screenshots/"+Screenshotname+".png";
+		
 		try 
 		{
 			TakesScreenshot ts=(TakesScreenshot)driver;
@@ -21,7 +24,9 @@ public class TakeScreenshots
 			File source=ts.getScreenshotAs(OutputType.FILE);
 			
 			
-			FileUtils.copyFile(source, new File("./Screenshots/"+Screenshotname+".png"));
+		
+			FileUtils.copyFile(source, new File(filePath));
+			
 		
 			System.out.println("screenshot is captured");
 			
