@@ -23,10 +23,7 @@ public class TakeScreenshots
 			
 			File source=ts.getScreenshotAs(OutputType.FILE);
 			
-			
-		
 			FileUtils.copyFile(source, new File(filePath));
-			
 		
 			System.out.println("screenshot is captured");
 			

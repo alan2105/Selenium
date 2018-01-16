@@ -31,7 +31,7 @@ public class TestReport2 {
 	@Test
 	public void VerifyUrl() throws InterruptedException
 	{
-		//WebDriverWait wait = new WebDriverWait(driver,30);
+		
 		report = new ExtentReports ("D:\\eclipse\\java-oxygen\\eclipse\\Selenium-code\\SeleniumWebDriver-Scripts\\bin\\Reports\\TestReport3.html");
 	
 		logger = report.startTest("VerifyURLofPage");
@@ -45,17 +45,18 @@ public class TestReport2 {
 		driver.manage().window().maximize();
 		logger.log(LogStatus.INFO,"Application is Up and running");
 		WebElement user = driver.findElement(By.id("inputUsername"));
+		
 		//wait.until(ExpectedConditions.visibilityOf(user));
-		//Thread.sleep(3000L);
+		
 		user.sendKeys("alagappan.n@vmokshagroup.com");
 		driver.findElement(By.id("inputPassword")).sendKeys("Power@1234");
 		driver.findElement(By.id("btnSignIn")).click();
-		logger.log(LogStatus.INFO,"Username 	and password has been passed and Click on Login");
-		//Thread.sleep(3000L);
+		logger.log(LogStatus.INFO,"Username and password has been passed and Click on Login");
 		
-	//wait.until(ExpectedConditions.urlContains("Inbox"));
+		WebDriverWait wait = new WebDriverWait(driver,20);
+		wait.until(ExpectedConditions.urlContains("Inbox"));
 		String CurrentUrl = driver.getCurrentUrl();
-		Assert.assertTrue(CurrentUrl.contains("Dash"));
+		Assert.assertTrue(CurrentUrl.contains("Inbox"));
 		logger.log(LogStatus.PASS, "Application logged successfully and URL contians Inbox");
 	}
 
