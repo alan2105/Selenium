@@ -27,7 +27,8 @@ public class MultiWindowHandle {
 		String Curl = driver.getCurrentUrl();		
 		Assert.assertTrue(true, Curl);
 		System.out.println(Curl);
-		//driver.switchTo().window(ParentWindow);
+		driver.switchTo().window(ParentWindow);
+		driver.manage().deleteAllCookies();
 	}
 
 }

@@ -10,7 +10,7 @@ public class verifyPageTitle {
 		//declaration and installation of objects/variables
 		WebDriver driver;
 		String baseUrl= "https://github.com/";
-		String expectedTitle = "The world's leading software development platform · GitHub";
+		String expectedTitle = "The world's leading software development platform GitHub";
 		String actualTitle;
 //		System.setProperty("webdriver.gecko.driver", "D:/eclipse/java-neon/eclipse/Third party drivers/GeckoDriver/geckodriver-v0.16.0-win64/geckodriver.exe");
 //		driver = new FirefoxDriver();

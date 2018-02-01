@@ -35,11 +35,11 @@ public class TestReport2 {
 		report = new ExtentReports ("D:\\eclipse\\java-oxygen\\eclipse\\Selenium-code\\SeleniumWebDriver-Scripts\\bin\\Reports\\TestReport3.html");
 	
 		logger = report.startTest("VerifyURLofPage");
-//		System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\java-oxygen\\eclipse\\Third party drivers\\GeckoDriver\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-//		driver = new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver","D:\\eclipse\\java-oxygen\\eclipse\\Third party drivers\\ChromeDriver\\chromedriver_win32_2.34\\chromedriver.exe");
+//System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\java-oxygen\\eclipse\\Third party drivers\\GeckoDriver\\geckodriver-v0.19.1-win64\\geckodriver.exe");
+//driver = new FirefoxDriver();
+			System.setProperty("webdriver.chrome.driver","D:\\eclipse\\java-oxygen\\eclipse\\Third party drivers\\ChromeDriver\\chromedriver_win32_2.34\\chromedriver.exe");
 		driver = new ChromeDriver();
-		
+//		
 		logger.log(LogStatus.INFO, "Browser started");
 		driver.get("http://test.vzone.vmokshagroup.com/");
 		driver.manage().window().maximize();
